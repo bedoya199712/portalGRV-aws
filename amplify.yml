@@ -1,16 +1,13 @@
 version: 1
 frontend:
   phases:
-    preBuild:
-      commands:
-        - npm ci
+    # IMPORTANT - Please verify your build commands
     build:
-      commands:
-        - npm run build
+      commands: []
   artifacts:
-    baseDirectory: dist/soft-grv
+    # IMPORTANT - Please verify your build output directory
+    baseDirectory: /
     files:
       - '**/*'
   cache:
-    paths:
-      - node_modules/**/*
+    paths: []
